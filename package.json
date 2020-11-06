@@ -1,0 +1,28 @@
+{
+  "name": "music-app",
+  "version": "1.0.0",
+  "description": "This app is created use react.js amazing library to build amazing ui interface with an incredible performance. n this app you can listen music, skip forward trough the music, pause music, library section, skip, etc",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BernardoAguayoOrtega/music-app.git"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "webpack",
+    "babel",
+    "husky",
+    "pretty",
+    "eslint"
+  ],
+  "author": "Bernardo Aguayo Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BernardoAguayoOrtega/music-app/issues"
+  },
+  "homepage": "https://github.com/BernardoAguayoOrtega/music-app#readme"
+}
