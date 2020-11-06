@@ -4,7 +4,12 @@
   "description": "This app is created use react.js amazing library to build amazing ui interface with an incredible performance. n this app you can listen music, skip forward trough the music, pause music, library section, skip, etc",
   "main": "index.jsx",
   "scripts": {
-    "test": "jest"
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --open",
+    "dev:hot": "npm run dev -- --hot",
+    "test": "jest",
+    "format": "pretty-quick",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -36,6 +41,7 @@
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.5.0",
     "webpack": "^5.4.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
