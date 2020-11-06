@@ -26,9 +26,12 @@
   },
   "homepage": "https://github.com/BernardoAguayoOrtega/music-app#readme",
   "dependencies": {
-    "babel-loader": "^8.1.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.5.0",
     "webpack": "^5.4.0",
     "webpack-cli": "^3.3.12"
   }
