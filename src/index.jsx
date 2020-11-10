@@ -9,10 +9,4 @@ import './scss/global-styles.scss';
 const root = document.getElementById('root');
 
 // render the app
-render(
-  <>
-    <h1>I&apos;m the app and I&apos;m alive</h1>
-    <App />
-  </>,
-  root
-);
+render(<App />, root);
