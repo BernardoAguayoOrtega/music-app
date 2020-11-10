@@ -1,7 +1,7 @@
 // create and import song component
-export const Player = () => (
+export const Song = () => (
   <>
-    <div className="player">
+    <div className="Song">
       <h1>Player</h1>
     </div>
   </>
