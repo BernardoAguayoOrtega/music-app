@@ -8,9 +8,9 @@ const root = document.getElementById('root');
 
 // render the app
 render(
-	<>
-		<h1>I'm the app and I'm alive</h1>
-		<App />
-	</>,
-	root,
+  <>
+    <h1>I&apos;m the app and I&apos;m alive</h1>
+    <App />
+  </>,
+  root
 );
