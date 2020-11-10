@@ -1,5 +1,11 @@
-// import global styles
-import '../../scss/app.scss';
+// adding components
+import Player from '../Player/index.jsx';
+import Song from '../Somg/index.jsx';
 
 // create app component and export it
-export const App = () => <h1>I'm the app</h1>;
+export const App = () => (
+  <div className="app">
+    <Song />
+    <Player />
+  </div>
+);
