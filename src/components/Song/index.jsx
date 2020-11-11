@@ -1,3 +1,6 @@
+// import styles
+import './style.scss';
+
 // create and import song component
 export const Song = () => (
   <>
