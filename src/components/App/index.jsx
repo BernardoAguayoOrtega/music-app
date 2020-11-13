@@ -3,13 +3,13 @@ import { useState } from 'react';
 // adding components
 import { Player } from '../Player/index.jsx';
 import { Song } from '../Song/index.jsx';
-// import util
-import data from '../../utils/data';
+// connect component
+import { connect } from 'react-redux';
 
 // create app component and export it
-export const App = () => {
+const App = ({ music = [] }) => {
   //state
-  const [songs, setSongs] = useState(data());
+  const [songs, setSongs] = useState(music);
   const [currentSong, setCurrentSong] = useState(songs[0]);
 
   return (
@@ -19,3 +19,9 @@ export const App = () => {
     </div>
   );
 };
+
+const mapStateToProps = (state) => ({
+  music: state.music,
+});
+
+export default connect(mapStateToProps)(App);
