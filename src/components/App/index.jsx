@@ -15,7 +15,7 @@ const App = ({ music = [] }) => {
   return (
     <div className="app">
       <Song currentSong={currentSong} />
-      <Player />
+      <Player currentSong={currentSong} />
     </div>
   );
 };
