@@ -12,11 +12,17 @@ import {
 import './style.scss';
 
 // create and import Player component
-export const Player = ({ currentSong }) => {
+export const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   const audioRef = useRef(null);
 
   const playSongHandler = () => {
-    audioRef.current;
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      audioRef.current.play();
+      setIsPlaying(true);
+    }
   };
 
   return (

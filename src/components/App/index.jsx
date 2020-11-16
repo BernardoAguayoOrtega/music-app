@@ -9,13 +9,18 @@ import { connect } from 'react-redux';
 // create app component and export it
 const App = ({ music = [] }) => {
   //state
-  const [songs, setSongs] = useState(music);
-  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [songs] = useState(music);
+  const [currentSong] = useState(songs[1]);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <div className="app">
       <Song currentSong={currentSong} />
-      <Player currentSong={currentSong} />
+      <Player
+        isPlaying={isPlaying}
+        setIsPlaying={setIsPlaying}
+        currentSong={currentSong}
+      />
     </div>
   );
 };
