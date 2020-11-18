@@ -14,8 +14,8 @@ import './style.scss';
 // create and import Player component
 export const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   const [songInfo, setSongInfo] = useState({
-    currentTime: null,
-    duration: null,
+    currentTime: '',
+    duration: '',
   });
 
   const audioRef = useRef(null);
@@ -40,6 +40,11 @@ export const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   const getTime = (time) =>
     Math.floor(time / 60) + ':' + ('0' + Math.floor(time % 60)).slice(-2);
 
+  const dragHandler = (e) => {
+    audioRef.current.currentTime = e.target.value;
+    setSongInfo({ ...songInfo, currentTime: e.target.value });
+  };
+
   return (
     <>
       <div className="player">
@@ -50,6 +55,7 @@ export const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
             max={songInfo?.duration}
             value={songInfo.currentTime}
             type="range"
+            onChange={dragHandler}
           />
           <p>{getTime(songInfo.duration - songInfo.currentTime)}</p>
         </div>
