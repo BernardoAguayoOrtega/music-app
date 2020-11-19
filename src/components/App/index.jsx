@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 const App = ({ music = [] }) => {
   //state
   const [songs] = useState(music);
-  const [currentSong] = useState(songs[1]);
+  const [currentSong] = useState(songs[2]);
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
