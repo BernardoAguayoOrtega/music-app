@@ -1,3 +1,5 @@
+import './style.scss';
+
 export const LibrarySong = ({ currentSong }) => (
   <>
     <div className="library-song">

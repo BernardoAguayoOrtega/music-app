@@ -1,4 +1,5 @@
 import { LibrarySong } from '../LibrarySong/index.jsx';
+import './style.scss';
 
 export const Library = ({ songs = [] }) => {
   return (
