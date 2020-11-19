@@ -1,6 +1,4 @@
-import './style.scss';
-
-export const LibrarySong = () => (
+export const LibrarySong = ({ currentSong }) => (
   <>
     <div className="library-song">
       <img src={currentSong?.cover} alt={currentSong?.name} />

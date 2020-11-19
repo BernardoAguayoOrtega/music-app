@@ -3,6 +3,7 @@ import { useState } from 'react';
 // adding components
 import { Player } from '../Player/index.jsx';
 import { Song } from '../Song/index.jsx';
+import { Library } from '../Library/index.jsx';
 // connect component
 import { connect } from 'react-redux';
 
@@ -21,6 +22,7 @@ const App = ({ music = [] }) => {
         setIsPlaying={setIsPlaying}
         currentSong={currentSong}
       />
+      <Library songs={songs} />
     </div>
   );
 };
